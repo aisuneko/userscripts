@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         osu!backgrounddl
 // @namespace    http://osu.ppy.sh
-// @version      0.1
+// @version      0.12
 // @description  downloader for the backgrounds in osu beatmaps
 // @author       aisuneko
 // @match        https://osu.ppy.sh/*
 // @icon         https://osu.ppy.sh/favicon.ico
+// @run-at document-body
 // ==/UserScript==
 const bodyList = document;
 const config = {
@@ -39,24 +40,13 @@ function observe(){
             mutations.forEach(function(mutation) {
                 if (oldHref != document.location.href) {
                     oldHref = document.location.href;
-                    observe2();
+                    main();
                 }
             });
         });
         observer.observe(bodyList, config);
     };
 }
-function observe2(){
-    const observer2 = new MutationObserver((mutations, obs) => {
-        if (document.getElementsByClassName("beatmapset-header__buttons")[0] != undefined) {
-            main();
-            obs.disconnect();
-        }
-    });
-    observer2.observe(bodyList, config);
-
-}
 (function(){
-    observe2();
     observe();
 })();
