@@ -7,6 +7,9 @@
 // @include      https://zh.wikipedia.org/zh-tw/*
 // @include      https://zh.wikipedia.org/zh-my/*
 // @include      https://zh.wikipedia.org/zh-sg/*
+// @include      https://zh.wikipedia.org/zh-hans/*
+// @include      https://zh.wikipedia.org/zh-hant/*
+// @include      https://zh.wikipedia.org/zh/*
 // @include      https://zh.m.wikipedia.org/wiki/*
 // @include      https://zh.m.wikipedia.org/zh-hk/*
 // @include      https://zh.m.wikipedia.org/zh-mo/*
@@ -14,6 +17,9 @@
 // @include      https://zh.m.wikipedia.org/zh-my/*
 // @include      https://zh.m.wikipedia.org/zh-sg/*
 // @include      https://zh.m.wikipedia.org/zh-cn/*
+// @include      https://zh.m.wikipedia.org/zh-hans/*
+// @include      https://zh.m.wikipedia.org/zh-hant/*
+// @include      https://zh.m.wikipedia.org/zh/*
 // @version      0.3
 // @description  Force redirect Chinese Wikipedia from other locales to zh-cn (and also from mobile ver to desktop ver)
 // @author       aisuneko
@@ -24,7 +30,7 @@
 
 (function() {
     'use strict';
-    let variants = ["wiki", "zh-hk", "zh-mo", "zh-tw","zh-my", "zh-sg"];
+    let variants = ["wiki", "zh-hk", "zh-mo", "zh-tw", "zh-my", "zh-sg", "zh-hans", "zh-hant", "zh"];
     let url = window.location.href;
     let desturl = url;
     let header = "zh.wikipedia.org/";
