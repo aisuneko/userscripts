@@ -1,30 +1,30 @@
 // ==UserScript==
 // @name         RedirectChineseWikipedia
 // @namespace    https://zh.wikipedia.org
-// @include      https://zh.wikipedia.org/wiki/*
-// @include      https://zh.wikipedia.org/zh-hk/*
-// @include      https://zh.wikipedia.org/zh-mo/*
-// @include      https://zh.wikipedia.org/zh-tw/*
-// @include      https://zh.wikipedia.org/zh-my/*
-// @include      https://zh.wikipedia.org/zh-sg/*
-// @include      https://zh.wikipedia.org/zh-hans/*
-// @include      https://zh.wikipedia.org/zh-hant/*
-// @include      https://zh.wikipedia.org/zh/*
-// @include      https://zh.m.wikipedia.org/wiki/*
-// @include      https://zh.m.wikipedia.org/zh-hk/*
-// @include      https://zh.m.wikipedia.org/zh-mo/*
-// @include      https://zh.m.wikipedia.org/zh-tw/*
-// @include      https://zh.m.wikipedia.org/zh-my/*
-// @include      https://zh.m.wikipedia.org/zh-sg/*
-// @include      https://zh.m.wikipedia.org/zh-cn/*
-// @include      https://zh.m.wikipedia.org/zh-hans/*
-// @include      https://zh.m.wikipedia.org/zh-hant/*
-// @include      https://zh.m.wikipedia.org/zh/*
+// @match      https://zh.wikipedia.org/wiki/*
+// @match      https://zh.wikipedia.org/zh-hk/*
+// @match      https://zh.wikipedia.org/zh-mo/*
+// @match      https://zh.wikipedia.org/zh-tw/*
+// @match      https://zh.wikipedia.org/zh-my/*
+// @match      https://zh.wikipedia.org/zh-sg/*
+// @match      https://zh.wikipedia.org/zh-hans/*
+// @match      https://zh.wikipedia.org/zh-hant/*
+// @match      https://zh.wikipedia.org/zh/*
+// @match      https://zh.m.wikipedia.org/wiki/*
+// @match      https://zh.m.wikipedia.org/zh-hk/*
+// @match      https://zh.m.wikipedia.org/zh-mo/*
+// @match      https://zh.m.wikipedia.org/zh-tw/*
+// @match      https://zh.m.wikipedia.org/zh-my/*
+// @match      https://zh.m.wikipedia.org/zh-sg/*
+// @match      https://zh.m.wikipedia.org/zh-cn/*
+// @match      https://zh.m.wikipedia.org/zh-hans/*
+// @match      https://zh.m.wikipedia.org/zh-hant/*
+// @match      https://zh.m.wikipedia.org/zh/*
 // @version      0.3
 // @description  Force redirect Chinese Wikipedia from other locales to zh-cn (and also from mobile ver to desktop ver)
 // @author       aisuneko
 // @icon         https://zh.wikipedia.org/favicon.ico
-
+// @license      MIT
 // @grant        none
 // ==/UserScript==
 
